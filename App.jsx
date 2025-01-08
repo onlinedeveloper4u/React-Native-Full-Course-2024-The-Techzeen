@@ -1,7 +1,8 @@
 import React from 'react'
 // import { View, Text, Button } from 'react-native'
 import { View } from 'react-native'
-import JSX from './src/components/JSX'
+import OnPress from './src/components/OnPress'
+// import JSX from './src/components/JSX'
 // import First from './src/components/First'
 
 const App = () => {
@@ -14,7 +15,8 @@ const App = () => {
       <First />
       <First />
       <First /> */}
-      <JSX />
+      {/* <JSX /> */}
+      <OnPress />
     </View>
   )
 }
