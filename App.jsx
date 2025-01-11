@@ -1,7 +1,7 @@
 import React from 'react'
 // import { View, Text, Button } from 'react-native'
 import { View } from 'react-native'
-import ContactListScren from './src/screens/Contact/ContactListScren'
+import ContactListScreen from './src/screens/Contact/ContactListScreen'
 // import LoginForm from './src/components/LoginForm'
 // import SectionListScreen from './src/components/SectionListScreen'
 // import FlatListScreen from './src/components/FlatListScreen'
@@ -32,7 +32,7 @@ const App = () => {
       {/* <FlatListScreen /> */}
       {/* <SectionListScreen /> */}
       {/* <LoginForm /> */}
-      <ContactListScren />
+      <ContactListScreen />
     </View>
   )
 }
