@@ -1,7 +1,8 @@
 import React from 'react'
 // import { View, Text, Button } from 'react-native'
 import { View } from 'react-native'
-import Styling from './src/components/Styling'
+import FlatListScreen from './src/components/FlatListScreen'
+// import Styling from './src/components/Styling'
 // import InputText from './src/components/InputText'
 // import Props from './src/components/Props'
 // import UseStateHook from './src/components/UseStateHook'
@@ -24,7 +25,8 @@ const App = () => {
       {/* <UseStateHook /> */}
       {/* <Props /> */}
       {/* <InputText /> */}
-      <Styling />
+      {/* <Styling /> */}
+      <FlatListScreen />
     </View>
   )
 }
