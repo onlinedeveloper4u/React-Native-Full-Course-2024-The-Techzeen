@@ -1,7 +1,8 @@
 import React from 'react'
 // import { View, Text, Button } from 'react-native'
 import { View } from 'react-native'
-import ContactListScreen from './src/screens/Contact/ContactListScreen'
+import Grid from './src/components/Grid'
+// import ContactListScreen from './src/screens/Contact/ContactListScreen'
 // import LoginForm from './src/components/LoginForm'
 // import SectionListScreen from './src/components/SectionListScreen'
 // import FlatListScreen from './src/components/FlatListScreen'
@@ -15,7 +16,7 @@ import ContactListScreen from './src/screens/Contact/ContactListScreen'
 
 const App = () => {
   return (
-    <View>
+    <View style={ { flex: 1 } }>
       {/* <Text style={ { fontSize : 30 } }>React Native Mobile APP Developer</Text>
       <Text style={ { fontSize : 30 } }>Muhammad Aqib</Text>
       <Button title='Press Here' />
@@ -32,7 +33,8 @@ const App = () => {
       {/* <FlatListScreen /> */}
       {/* <SectionListScreen /> */}
       {/* <LoginForm /> */}
-      <ContactListScreen />
+      {/* <ContactListScreen /> */}
+      <Grid />
     </View>
   )
 }
