@@ -1,7 +1,8 @@
 import React from 'react'
 // import { View, Text, Button } from 'react-native'
 import { View } from 'react-native'
-import UseEffectHookUnmountingPhase from './src/components/UseEffectHookUnmountingPhase'
+import HideShowToggle from './src/components/HideShowToggle'
+// import UseEffectHookUnmountingPhase from './src/components/UseEffectHookUnmountingPhase'
 // import UseEffectHookUpdatingPhase from './src/components/UseEffectHookUpdatingPhase'
 // import UseEffectHook from './src/components/UseEffectHook'
 // import ClassComponents from './src/components/ClassComponents'
@@ -42,7 +43,8 @@ const App = () => {
       {/* <ClassComponents /> */}
       {/* <UseEffectHook /> */}
       {/* <UseEffectHookUpdatingPhase /> */}
-      <UseEffectHookUnmountingPhase />
+      {/* <UseEffectHookUnmountingPhase /> */}
+      <HideShowToggle />
     </View>
   )
 }
