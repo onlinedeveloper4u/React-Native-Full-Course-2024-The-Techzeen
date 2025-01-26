@@ -1,7 +1,8 @@
 import React from 'react'
 // import { View, Text, Button } from 'react-native'
 import { View } from 'react-native'
-import ModalDialogBox from './src/components/ModalDialogBox'
+import AlertExample from './src/components/AlertExample'
+// import ModalDialogBox from './src/components/ModalDialogBox'
 // import UseRefHook from './src/components/UseRefHook'
 // import StatusBarExample from './src/components/StatusBarExample'
 // import PressableComponent from './src/components/PressableComponent'
@@ -56,7 +57,8 @@ const App = () => {
       {/* <PressableComponent /> */}
       {/* <StatusBarExample /> */}
       {/* <UseRefHook /> */}
-      <ModalDialogBox />
+      {/* <ModalDialogBox /> */}
+      <AlertExample />
     </View>
   )
 }
