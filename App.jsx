@@ -1,7 +1,8 @@
 import React from 'react'
 // import { View, Text, Button } from 'react-native'
 import { View } from 'react-native'
-import GET_API from './src/components/GET_API'
+import POST_API from './src/components/POST_API'
+// import GET_API from './src/components/GET_API'
 // import AlertExample from './src/components/AlertExample'
 // import ModalDialogBox from './src/components/ModalDialogBox'
 // import UseRefHook from './src/components/UseRefHook'
@@ -60,7 +61,8 @@ const App = () => {
       {/* <UseRefHook /> */}
       {/* <ModalDialogBox /> */}
       {/* <AlertExample /> */}
-      <GET_API />
+      {/* <GET_API /> */}
+      <POST_API />
     </View>
   )
 }
