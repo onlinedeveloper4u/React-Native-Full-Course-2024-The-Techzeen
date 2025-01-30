@@ -1,12 +1,13 @@
 import React from 'react'
-import { View } from 'react-native'
-import Parent from './src/components/Parent'
+import {Provider} from 'react-redux'
+import { store } from './src/redux/store/store'
+import Counter from './src/components/Counter'
 
 const App = () => {
   return (
-    <View style={ { flex: 1 } }>
-      <Parent />
-  </View>
+    <Provider store={store}>
+      <Counter />
+    </Provider>
   )
 }
 
