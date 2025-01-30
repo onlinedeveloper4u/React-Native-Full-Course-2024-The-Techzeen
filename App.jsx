@@ -1,7 +1,8 @@
 import React from 'react'
 // import { View, Text, Button } from 'react-native'
 import { View } from 'react-native'
-import AsyncStorageExample from './src/components/AsyncStorageExample'
+import ImageComponentExample from './src/components/ImageComponentExample'
+// import AsyncStorageExample from './src/components/AsyncStorageExample'
 // import Search from './src/components/Search'
 // import PlatformExample from './src/components/PlatformExample'
 // import GET_API_LIST from './src/components/GET_API_LIST'
@@ -76,7 +77,8 @@ const App = () => {
     {/* <GET_API_LIST /> */}
     {/* <PlatformExample /> */}
     {/* <Search /> */}
-    <AsyncStorageExample />
+    {/* <AsyncStorageExample /> */}
+    <ImageComponentExample />
   </View>
   )
 }
