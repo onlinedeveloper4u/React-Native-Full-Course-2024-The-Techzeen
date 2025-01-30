@@ -2,37 +2,23 @@ import 'react-native-gesture-handler'
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import Icon from 'react-native-vector-icons/Ionicons'
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 
-const Tab = createBottomTabNavigator()
+const Tab = createMaterialTopTabNavigator()
 
-const getTabBarIcon = (routeName, focused, color, size) => {
-  let iconName
-  if (routeName === 'Home') {
-    iconName = focused ? 'home' : 'home-outline'
-  }
-  else if (routeName === 'Profile') {
-    iconName = focused ? 'person' : 'person-outline'
-  } else if (routeName === 'Settings') {
-    iconName = focused ? 'settings' : 'settings-outline'
-  }
-  return <Icon name={iconName} size={size} color={color} />
-}
-
-const HomeScreen = () => (
+const ChatScreen = () => (
   <View style={styles.container}>
-    <Text style={styles.text}>Home Screen</Text>
+    <Text style={styles.text}>Chats</Text>
   </View>
 )
-const ProfileScreen = () => (
+const StatusScreen = () => (
   <View style={styles.container}>
-    <Text style={styles.text}>Profile Screen</Text>
+    <Text style={styles.text}>Status</Text>
   </View>
 )
-const SettingsScreen = () => (
+const CallsScreen = () => (
   <View style={styles.container}>
-    <Text style={styles.text}>Settings Screen</Text>
+    <Text style={styles.text}>Calls</Text>
   </View>
 )
 
@@ -40,20 +26,22 @@ const App = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) =>
-            getTabBarIcon(route.name, focused, color, size),
-            tabBarActiveTintColor: '#007bff',
-            tabBarInactiveTintColor: 'gray',
-            tabBarStyle: {
-              paddingBottom: 5,
-              height: 60
-            }
-        })}
+        screenOptions={{
+          tabBarActiveTintColor: '#007bff',
+          tabBarInactiveTintColor: 'gray',
+          tabBarStyle: { backgroundColor: '#fff' },
+          tabBarIndicatorStyle: {
+            backgroundColor: '#007bff',
+            height: 3
+          },
+          tabBarLabelStyle: {
+            fontSize: 16
+          }
+        }}
       >
-        <Tab.Screen name='Home' component={HomeScreen} />
-        <Tab.Screen name='Profile' component={ProfileScreen} />
-        <Tab.Screen name='Settings' component={SettingsScreen} />
+        <Tab.Screen name='Chats' component={ChatScreen} />
+        <Tab.Screen name='Status' component={StatusScreen} />
+        <Tab.Screen name='Calls' component={CallsScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   )
@@ -66,11 +54,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f8f9fa'
+    backgroundColor: '#f0f2f5'
   },
   text: {
-    fontSize: 26,
-    fontWeight: 'bold',
-    color: '#343a40'
+    fontSize: 20
   }
 })
