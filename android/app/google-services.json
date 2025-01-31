@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1006679350878",
+    "project_id": "rnfirebase-6e05b",
+    "storage_bucket": "rnfirebase-6e05b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006679350878:android:9458201d4b5107f9a31ecf",
+        "android_client_info": {
+          "package_name": "com.aqib.reactnativetutorial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXyIMlPdpW3jiNufGjfjmomryQN7Uj4Bs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

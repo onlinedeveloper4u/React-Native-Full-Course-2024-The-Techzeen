@@ -1,12 +1,11 @@
 import './global.css'
 import React from 'react'
-import { View } from 'react-native'
-import AnimatedCardFlip from './src/components/AnimatedCardFlip'
+import { View, Text } from 'react-native'
 
 const App = () => {
   return (
-    <View style={{flex: 1}}>
-      <AnimatedCardFlip />
+    <View className="flex-1">
+      <Text className="text-center text-6xl">Firebase with React Native</Text>
     </View>
   )
 }

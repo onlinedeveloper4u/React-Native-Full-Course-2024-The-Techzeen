@@ -1,4 +1,4 @@
-package com.reactnativetutorial
+package com.aqib.reactnativetutorial
 
 import android.os.Bundle
 import com.facebook.react.ReactActivity
