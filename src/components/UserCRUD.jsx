@@ -1,6 +1,7 @@
 import { View, Text, Alert, TextInput, TouchableOpacity } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import { addUserData, deleteUser, getUsers, updateUser } from '../database/firestoreCRUD'
+// import { addUserData, deleteUser, getUsers, updateUser } from '../database/firestoreCRUD'
+import { addUserData, deleteUser, getUsers, updateUser } from '../database/realtimeCRUD'
 import { FlatList } from 'react-native'
 
 const UserCRUD = () => {
