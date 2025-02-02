@@ -1,16 +1,17 @@
 // Firebase Authentication
 import './global.css'
 import React, { useEffect } from 'react'
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
 import SplashScreen from 'react-native-splash-screen'
+import SwitchUI from './src/components/SwitchUI'
 
 const App = () => {
   useEffect(() => {
     SplashScreen.hide()
   }, [])
   return (
-    <View className="text-center text-3xl">
-      <Text>Splash Screen</Text>
+    <View className="flex-1">
+      <SwitchUI />
     </View>
   )
 }
