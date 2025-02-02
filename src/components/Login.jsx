@@ -2,7 +2,7 @@ import { View, Text, TextInput, TouchableOpacity, Alert } from 'react-native'
 import React, { useState } from 'react'
 import { loginUser } from '../services/auth'
 
-const Login = () => {
+const Login = ({ navigation }) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const handleLogin = async () => {
@@ -48,6 +48,12 @@ const Login = () => {
             />
             <TouchableOpacity className="bg-pink-600 p-4 rounded-lg" onPress={handleLogin}>
                 <Text className="text-white text-center font-semibold text-lg">Login</Text>
+            </TouchableOpacity>
+            <TouchableOpacity className="mt-4" onPress={(() => navigation.navigate('ForgotPassword'))}>
+                <Text className="text-center text-pink-600">Forgot Password</Text>
+            </TouchableOpacity>
+            <TouchableOpacity className="mt-4" onPress={(() => navigation.navigate('Register'))}>
+                <Text className="text-center text-pink-600">Register</Text>
             </TouchableOpacity>
         </View>
     </View>
